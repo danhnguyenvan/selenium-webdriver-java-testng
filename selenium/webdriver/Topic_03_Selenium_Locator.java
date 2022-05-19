@@ -77,6 +77,7 @@ public class Topic_03_Selenium_Locator {
 
 	@Test
 	public void TC_05_Tagname() {
+		// Refresh current page
 		driver.navigate().refresh();
 
 		// Hiển thị hết tất cả đường link tại màn hình này sau đó getText ra
