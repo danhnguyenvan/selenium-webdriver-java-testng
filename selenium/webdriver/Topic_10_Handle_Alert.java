@@ -12,7 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_09_Handle_Alert {
+public class Topic_10_Handle_Alert {
 	WebDriver driver;
 	Alert alert;
 	String projectPath = System.getProperty("user.dir");
