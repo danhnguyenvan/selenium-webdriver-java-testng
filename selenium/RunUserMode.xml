@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="User Mode">
+	<parameter name="url" value="https://demo.nopcommerce.com/" />
+	<parameter name="environment" value="LOCAL" />
+	
+	<listeners>
+		<listener class-name = "listener.ExtentReport"></listener>
+	</listeners>
+	
+	
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testng.Topic_08_Dependence" />
+		</classes>
+	</test>
+</suite>

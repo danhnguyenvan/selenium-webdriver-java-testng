@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="User Mode" thread-count="3">
+
+	<groups>
+		<run>
+			<!-- <include name="super" /> -->
+			<!-- <exclude name="super" /> -->
+		</run>
+	</groups>
+
+<!-- 	Muốn run trên nhiều environments thì thiết lập như sau: -->
+	<parameter name = "url" value = "https://demo.nopcommerce.com/" />
+	<parameter name = "environment" value = "LOCAL" />
+
+	<test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testng.Topic_06_Parameter" />
+		</classes>
+	</test>
+
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testng.Topic_06_Parameter" />
+		</classes>
+	</test>
+
+	<test name="Run on EDGE">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="testng.Topic_06_Parameter" />
+		</classes>
+	</test>
+</suite>
